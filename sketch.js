@@ -34,7 +34,7 @@ function preload()
 function setup() 
 {
   
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   
   bg = createSprite(0, 200);
   bg.addImage(backgroundImage);
@@ -81,7 +81,7 @@ function draw()
         
         }
       
-      if(keyDown("space"))
+      if(touches.length>0 && keyDown("space"))
         {
           
           monkey.velocityY = -10;
